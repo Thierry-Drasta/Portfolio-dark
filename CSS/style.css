@@ -3,13 +3,7 @@
     padding: 0;
 }
 
-body{
-    background-image: url('../image/bkground.jpg');
-    background-color: black;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+body {
     font-family: 'Roboto', sans-serif;
     color: #fff;
 }
