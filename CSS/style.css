@@ -98,7 +98,7 @@ main .sided-navigation .social-media img{
 }
 /* End of CSS-Homepage */
 
-/* CSS-About */
+/* CSS-About-Me*/
 
 main .my-details{
     position: absolute;
@@ -174,8 +174,8 @@ main .my-details .main-content h4 {
 main .my-details .main-content .about-content {
     font-family: 'Times New Roman', Times, serif;
     margin-left: 10px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 40px;
+    margin-bottom: 50px;
 }
 
 main .my-details .main-content .underparagraph {
@@ -247,7 +247,7 @@ main .my-details .main-content .info-session .info-session-address .address{
 main .my-details .main-content .info-session .info-session-download {
     position: relative;
     margin-left: 60px;
-    margin-top: 60px;
+    margin-top: 70px;
 }
 
 main .my-details .main-content .info-session .info-session-download button{
@@ -304,3 +304,159 @@ main .my-details .main-content .info-session .main-social-media img{
     border-radius: 10px;
 }
 
+/* End of CSS About-Me  */
+/* CSS About-Services */
+
+main .my-details .my-services .service-small-title{
+    padding: 60px 30px 30px 30px;
+    color: gray;
+    font-size: 16px;
+}
+
+main .my-details .my-services h1 {
+    padding: 0px 0px 0 30px;
+    font-size: 38px;
+    font-weight: 800;
+}
+
+main .my-details .my-services .services {
+    /* border: 1px solid red; */
+    margin-top: 20px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    width: auto;
+    height: 360px;
+}
+
+main .my-details .my-services .services .service{
+    border: 1px solid rgba(83, 207, 139, 0.87);
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+    width: 400px;
+    height: 300px;
+    background-color: rgba(22, 20, 20, 0.712);
+    text-align: center;
+    border-style: dashed;
+    border-top-left-radius: 10%;
+}
+
+main .my-details .my-services .services .service:hover{
+    border: 1px solid rgba(255, 255, 255, 0.973);
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+    width: 400px;
+    height: 300px;
+    background-color: rgba(255, 255, 255, 0.137);
+    text-align: center;
+    border-style: dashed;
+    border-top-right-radius: 20%;
+    border-bottom-left-radius: 20%;
+}
+
+main .my-details .my-services .services .service .service-image{
+    margin-top: 20px;
+}
+
+main .my-details .my-services .services .service .service-image img{
+    margin-top: 5px;
+    border-radius: 10px;
+    width: 80px;
+    height: 80px;
+}
+
+main .my-details .my-services .services .service .service-content h3{
+    margin-top: 20px;
+    color: rgba(62, 240, 142, 0.87);   
+}
+
+main .my-details .my-services .services .service .service-content p{
+    margin-top: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+    text-align: left;
+}
+
+/* End of CSS about-Services */
+
+/* CSS About-testimonials */
+
+main .my-details .my-testimonials .testimonial-small-title {
+    padding: 60px 30px 30px 30px;
+    color: gray;
+    font-size: 16px;
+}
+
+main .my-details .my-testimonials h1 {
+    padding: 0px 0px 0 30px;
+    font-size: 38px;
+    font-weight: 800;
+}
+
+main .my-details .my-testimonials .active-testimonials{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: auto;
+    height: 360px;
+    /* border: 1px solid red; */
+}
+
+main .my-details .my-testimonials .active-testimonials .testimonial {
+    /* border: 1px solid yellow; */
+    margin-top: 30px;
+    margin-left: 40px;
+    margin-right: 40px;
+    width: 600px;
+    height: 300px;
+    background-color: rgba(22, 20, 20, 0.712);
+    
+}
+
+main .my-details .my-testimonials .active-testimonials .testimonial:hover {
+    /* border: 1px solid yellow; */
+    margin-top: 30px;
+    margin-left: 40px;
+    margin-right: 40px;
+    width: 600px;
+    height: 300px;
+    /* background-color: rgba(158, 12, 12, 0.712); */
+    border-bottom-color: aqua;
+    border-bottom-style: dotted;
+    border-bottom-width: 1px;
+    
+}
+
+main .my-details .my-testimonials .active-testimonials .testimonial .testimonial-image img{
+    margin-left: 30px;
+    margin-top: 20px;
+    border-radius: 50%;
+
+}
+main .my-details .my-testimonials .active-testimonials .testimonial .testimonial-header{
+    position: absolute;
+    margin-top: -80px;
+    margin-left: 150px;
+    font-weight: 700;   
+}
+
+main .my-details .my-testimonials .active-testimonials .testimonial .icon-quote i{
+    position: absolute;
+    color: rgba(62, 240, 142, 0.87);
+    font-size: 30px;
+    margin-left: 520px;
+    margin-top: -90px;
+}
+
+main .my-details .my-testimonials .active-testimonials .testimonial .testimonial-content{
+    position: relative;
+    margin-top: 20px;
+    margin-left: 30px;
+    margin-right: 40px;
+    font-size: 16px;
+}
