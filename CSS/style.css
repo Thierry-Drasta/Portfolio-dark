@@ -102,13 +102,13 @@ main .sided-navigation .social-media img{
 
 main .my-details{
     position: absolute;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 99%;
     height: 720px;
 }
 
 main .my-details .main-image {
-    border: 1px solid green;
+    /* border: 1px solid green; */
     width: 40%;
     margin-top: 20px;
     margin-left: 20px;
@@ -127,7 +127,7 @@ main .my-details .main-image img {
 
 main .my-details .main-content {
     position: absolute;
-    border: 1px solid yellow;
+    /* border: 1px solid yellow; */
      margin-top: -658px;
     width: 55%;
     height: 650px;
