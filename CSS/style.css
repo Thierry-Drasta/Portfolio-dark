@@ -6,6 +6,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     color: #fff;
+    background-color: black;
 }
 
 a{
@@ -95,3 +96,211 @@ main .sided-navigation .social-media img{
     margin-top: 0px;
     background-color: #fff;
 }
+/* End of CSS-Homepage */
+
+/* CSS-About */
+
+main .my-details{
+    position: absolute;
+    border: 1px solid red;
+    width: 99%;
+    height: 720px;
+}
+
+main .my-details .main-image {
+    border: 1px solid green;
+    width: 40%;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+main .my-details .main-image img {
+
+    position: relative;
+    margin-left: 50px;
+    margin-top: 150px;
+    border-radius: 20px;
+    border: 1px solid white;
+    width: 450px;
+    height: 500px;
+}
+
+main .my-details .main-content {
+    position: absolute;
+    border: 1px solid yellow;
+     margin-top: -658px;
+    width: 55%;
+    height: 650px;
+    margin-left: 43%;
+}
+
+main .my-details .main-content .about-small-title {
+    color: gray;
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+main .my-details .main-content h1 {
+    margin-top: 20px;
+    text-align: center;
+    font-weight: 800;
+    font-size: 36px;
+    margin-bottom: 20px;
+    
+}
+
+main .my-details .main-content .aboutme {
+    color: rgba(83, 207, 139, 0.87);
+    width: 140px;
+    margin-left: 300px;
+}
+
+main .my-details .main-content h5 {
+    text-align: left;
+    font-weight: 800;
+    font-size: 24px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    color: rgba(83, 207, 139, 0.87);
+}
+
+main .my-details .main-content h4 {
+    margin-left: 10px;
+    font-size: 22px;
+}
+
+main .my-details .main-content .about-content {
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+main .my-details .main-content .underparagraph {
+    width: 650px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+
+main .my-details .main-content .info-session {
+    position: relative;
+    margin-left: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+main .my-details .main-content .info-session .info-session-name {
+    position: relative;
+    margin-left: 10px;
+    margin-top: 50px;
+    width: 300px;
+}
+
+main .my-details .main-content .info-session .info-session-name .name {
+    position: relative;
+    margin-left: 10px;
+    color: rgba(83, 207, 139, 0.87);
+    font-style: italic;
+}
+
+main .my-details .main-content .info-session .info-session-email {
+    position: absolute;
+    margin-left: 350px;
+    margin-top: -20px;
+}
+main .my-details .main-content .info-session .info-session-email .email{
+    position: absolute;
+    color: rgba(83, 207, 139, 0.87);
+    font-style: italic;
+    margin-left: 10px;
+}
+
+main .my-details .main-content .info-session .info-session-age {
+    position: relative;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+main .my-details .main-content .info-session .info-session-age .age{
+    position: relative;
+    margin-left: 40px;
+    margin-top: 30px;
+    color: rgba(83, 207, 139, 0.87);
+}
+
+main .my-details .main-content .info-session .info-session-address {
+    position: absolute;
+    margin-left: 350px;
+    margin-top: -20px;
+}
+main .my-details .main-content .info-session .info-session-address .address{
+    position: absolute;
+    color: rgba(83, 207, 139, 0.87);
+    font-style: italic;
+    margin-left: 10px;
+    width: 200px;
+}
+
+main .my-details .main-content .info-session .info-session-download {
+    position: relative;
+    margin-left: 60px;
+    margin-top: 60px;
+}
+
+main .my-details .main-content .info-session .info-session-download button{
+    height: 35px;
+    width: 160px;
+    background-color: rgba(83, 207, 139, 0.87);
+    border-radius: 10px;
+    border: 1px solid rgba(83, 207, 139, 0.87);
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+main .my-details .main-content .info-session .info-session-download button:hover{
+    height: 35px;
+    width: 160px;
+    background-color: rgb(0, 245, 110);
+    border-radius: 10px;
+    border: 1px solid rgba(0, 245, 110);
+    color: black;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+main .my-details .main-content .info-session .underdown {
+    position: absolute;
+    margin-top: -15px;
+    width: 200px;
+    margin-left: 270px;
+}
+
+
+
+main .my-details .main-content .info-session .main-social-media ul{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    margin-left: 500px;
+    margin-top: -30px;
+}
+
+main .my-details .main-content .info-session .main-social-media img{
+   
+    width: 25px;
+    height: 25px;
+    background-color: #fff;
+    margin-left: 20px;
+    border-radius: 10px;
+}
+
