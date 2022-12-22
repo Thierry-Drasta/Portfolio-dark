@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="CSS/style.css">
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloud<script type="text/javascript" src="/js/indexjs.js" ></script>flare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
 </head>
 <body>
     <div class="container">
@@ -42,12 +42,29 @@
                     <h4 class="contact-session-header">Message Me</h4>
 
                     <div class="contact-form">
-                        <form action="contact.php" method="post">
-                            <input type="text" name="name" placeholder=" Name" required>
-                            <input type="email" name="email" placeholder=" Email" required>
-                            <input class="subject" type="text" name="subject" placeholder="Subject" required>
-                            <textarea class="message-here" name="message" placeholder="Message" required></textarea>
+                        <form name="myForm" action="contact.html" method="post" onsubmit="return validationForm()">
+                            <div class="input-group">
+                                <input type="text" name="xname" placeholder="Full Name" id="contact-name" onkeyup="validateName()">
+                                <span id="name-error"></span>
+                            </div>
+                            
+                            <div class="input-group">
+                                <input type="email" name="xemail" placeholder=" Email" >
+                                <span id="email-error"></span>    
+                            </div>
+
+                            <div class="input-group">
+                                <input class="subject" type="text" name="xsubject" placeholder="Subject">
+                                <span id="subject-error"></span>
+                            </div>
+                            
+                            <div class="input-group">
+                                <textarea class="message-here" name="xmessage" placeholder="Message"></textarea>
+                                <span id="message-error"></span>
+                            </div>
+                            
                             <button type="submit" name="submit">Send Message</button>
+                            <span id="submit-error"></span>
                         </form>
                     </div>
 
@@ -110,5 +127,7 @@
         </main>
 
     </div>
+
+    <script type="text/javascript" src="js/indexjs.js" ></script>
 </body>
 </html>

@@ -17,6 +17,18 @@ ul{
     list-style: none;
 }
 
+.input-group span {
+    position: absolute;
+    right: 50px;
+    font-size: 14px;
+    color: red;
+    margin-top: 35px;
+}
+
+#submit-error {
+    color: red;
+}
+
 header nav{
     background-color: black;
     height: 100px;
@@ -500,6 +512,7 @@ main .contact-details .contact-session .contact-session-header {
 
 main .contact-details .contact-session .contact-form{
     /* border: 1px solid yellow; */
+    position: relative;
     margin-top: 20px;
     height: 400px;
     width: 650px;
@@ -507,11 +520,10 @@ main .contact-details .contact-session .contact-form{
 }
 
 main .contact-details .contact-session .contact-form input {
-
     margin-top: 30px;
     margin-left: 20px;
     margin-right: 20px;
-    width: 260px;
+    width: 580px;
     height: 35px;
     border: 1px solid rgb(36, 37, 37);
     border-radius: 5px;
@@ -521,7 +533,6 @@ main .contact-details .contact-session .contact-form input {
 }
 
 main .contact-details .contact-session .contact-form .subject{
-
     margin-top: 30px;
     margin-left: 20px;
     margin-right: 20px;
@@ -678,3 +689,299 @@ main .contact-details .contact-session .contact-informations .address-icon-sessi
     font-size: 14px;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+
+main .blog-title h1, p{
+    margin-top: 30px;
+    text-align: center;
+}
+
+main .blog-title p {
+    font-size: 16px;
+    color: gray;
+}
+main .blog-title h1 {
+    margin-top: 10px;
+    font-size: 38px;
+    font-weight: 700;
+}
+
+main .blog-title .blog-line {
+    width: 100px;
+    text-align: center;
+    border: 1px solid rgba(62, 240, 142, 0.87); 
+    margin: 0 auto;   
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+main .blog-lists {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    /* border: 1px solid red; */
+    width: 100%;
+}
+
+main .blog-lists .blog-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    width:400px;
+    height: 500px;
+}
+
+main .blog-lists .blog-content .blog-image{
+    width: 300px;
+    height: 200px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+main .blog-lists .blog-content .blog-image img{
+    width: 300px;
+    height: 200px;
+    border-radius: 5px;
+}
+main .blog-lists .blog-content .blog-header h2{
+    color: #fff;
+    font-size: 22px;
+    font-weight: 700;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+main .blog-lists .blog-content .blog-description p{
+    color: #fff;
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+main .blog-lists .blog-content .blog-description .blog-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+main .blog-lists .blog-content .blog-description .blog-info .blog-author p{
+   font-size: 12px;
+   font-style: oblique;
+   font-weight: 700;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+main .blog-lists .blog-content .blog-description .blog-info .blog-author p span{
+   font-size: 12px;
+   font-style: oblique;
+   font-weight: 700;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   color: aqua;
+}
+
+main .blog-lists .blog-content .blog-description .blog-info .blog-date p{
+   font-size: 12px;
+   font-style: oblique;
+   font-weight: 700;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+main .blog-lists .blog-content .blog-description .blog-info .blog-date p span{
+   font-size: 12px;
+   font-style: oblique;
+   font-weight: 700;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   color: aqua;
+}
+
+main .resume-title p, h1{
+    text-align: center;
+    margin-top: 30px;
+}
+
+main .resume-title p{
+    color: gray;
+    font-size: 16px;
+}
+
+main .resume-title h1 {
+    margin-top: 10px;
+    font-size: 38px;
+    font-weight: 700;
+}
+
+main .resume-title .resume-line {
+    width: 150px;
+    text-align: center;
+    border: 1px solid rgba(62, 240, 142, 0.87); 
+    margin: 0 auto;   
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+main .backgrounds {
+    display: flex;
+    flex-direction: row;
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 600px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+main .backgrounds .education {
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid yellow; */
+    background-color: rgba(68, 67, 67, 0.336);
+    width: 44%;
+    margin-left: 4%;
+    margin-right: 2%;
+    margin-top: 30px;
+    border-left: 4px solid rgba(13, 201, 98, 0.87);
+}
+
+main .backgrounds .education .background-education{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 30px;
+}
+
+main .backgrounds .education .background-education .education-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    /* border: 3px solid green; */
+}
+
+main .backgrounds .education .background-education .education-info .para1{
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-bottom: 20px;
+    text-align: left;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 18px;
+}
+
+main .backgrounds .education .background-education .education-info .para1 span{
+ color: rgb(165, 236, 230);
+    font-size: 16px;
+    font-weight: 700;
+    font-size: 12px;
+}
+
+main .backgrounds .education .background-education .education-info hr{
+    color: rgb(58, 57, 57);
+}
+main .backgrounds .experience {
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid blue; */
+    background-color: rgba(68, 67, 67, 0.336);
+    width: 44%;
+    margin-left: 2%;
+    margin-right: 4%;
+    margin-top: 30px;
+    border-left: 4px solid rgba(13, 201, 98, 0.87);
+}
+
+main .backgrounds .experience .background-experience{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 30px;
+}
+
+main .backgrounds .experience .background-experience .experience-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    /* border: 3px solid green; */
+}
+
+main .backgrounds .experience .background-experience .experience-info .para2{
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-bottom: 20px;
+    text-align: left;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 18px;
+}
+
+main .backgrounds .experience .background-experience .experience-info .para2 span{
+ color: rgb(165, 236, 230);
+    font-size: 16px;
+    font-weight: 700;
+    font-size: 12px;
+}
+
+main .backgrounds .experience .background-experience .experience-info hr{
+    color: rgb(58, 57, 57);
+}
+
+main .office {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    /* border: 1px solid white; */
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+}
+ main .office .note-section {
+    /* border: 1px solid red; */
+    width: 48%;
+    height: 400px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 1%;
+    margin-right: 1%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+ }
+
+  main .office .note-section .note-head h2 {
+    font-size: 32px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+  }
+
+   main .office .note-section .summary p{
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: left;
+    margin-left: 50px;
+    margin-right: 20px;
+  }
+
+
+ main .office .video-section {
+    border: 1px solid rgba(255, 0, 0, 0.185);
+    width: 45%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 1%;
+    margin-right: 1%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-style: dashed;
+    border-top: 10px;
+    border-bottom: 10px;
+ }
+
+/* 
+ main .office .video-section .office-video {
+    border: 1px solid yellow;
+ } */
+
+ main .office .video-section .office-video img{
+    width: 100%;
+    border-radius: 10px;
+
+ }
