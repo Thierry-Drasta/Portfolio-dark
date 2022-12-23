@@ -42,29 +42,32 @@
                     <h4 class="contact-session-header">Message Me</h4>
 
                     <div class="contact-form">
-                        <form name="myForm" action="contact.html" method="post" onsubmit="return validationForm()">
+                        <form name="myForm" action="contact.html" method="post" onsubmit="return validateForm()">
                             <div class="input-group">
                                 <input type="text" name="xname" placeholder="Full Name" id="contact-name" onkeyup="validateName()">
                                 <span id="name-error"></span>
                             </div>
                             
                             <div class="input-group">
-                                <input type="email" name="xemail" placeholder=" Email" >
+                                <input type="email" name="xemail" placeholder=" Email" id="contact-email" onkeyup="validateMail()">
                                 <span id="email-error"></span>    
                             </div>
 
                             <div class="input-group">
-                                <input class="subject" type="text" name="xsubject" placeholder="Subject">
+                                <input class="subject" type="text" name="xsubject" placeholder="Subject" id="contact-subject" onkeyup="validateSubject()">
                                 <span id="subject-error"></span>
                             </div>
                             
                             <div class="input-group">
-                                <textarea class="message-here" name="xmessage" placeholder="Message"></textarea>
+                                <textarea class="message-here" name="xmessage" placeholder="Message" id="contact-message" onkeyup="validateMessage()"></textarea>
                                 <span id="message-error"></span>
                             </div>
                             
-                            <button type="submit" name="submit">Send Message</button>
-                            <span id="submit-error"></span>
+                            <div class="input-group">
+                                <button type="submit" name="submit">Send Message</button>
+                                <span id="submit-error"></span>
+                            </div>
+                            
                         </form>
                     </div>
 
