@@ -1049,7 +1049,7 @@ main .office {
 }
 
 main .portfolio-category {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 100%;
     height: 60px;
     display: flex;
@@ -1066,11 +1066,22 @@ main .portfolio-category ul, li{
 
 main .portfolio-category a{
     margin-left: 10px;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     text-align: center;
     width: 100px;
     height: 40px;
     color: #fff;
+    font-weight: 700;
+}
+
+main .portfolio-category a:hover{
+    margin-left: 10px;
+    border: 1px solid blue;
+    text-align: center;
+    width: 100px;
+    height: 40px;
+    border-bottom: 2px solid rgba(62, 240, 142, 0.87);
+    color: rgba(62, 240, 142, 0.87);
 }
 
 main .items{
@@ -1084,14 +1095,35 @@ main .items{
 }
 
 .items .item{
+    background-position: center;
+    background-size: cover;
     width: 30%;
     height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.items .item .item-image img{
-    width: 100%;
-    height: 400px;
+.items .item .contents a {
+    color: red;
 }
+
+.items .item h2, p {
+    text-align: center;
+    font-weight: 800;
+}
+
+.items .item p {
+    font-size: 15px;
+}
+
+.items .item .contents a:hover{
+    color: white;
+    transition: 0.5s ease-in-out;
+}
+
+
+
 
 
 
