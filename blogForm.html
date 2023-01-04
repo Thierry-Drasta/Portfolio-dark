@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="CSS/style.css">
+    <title>Blog-Form Page</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <div class="portfolio-logo">
+                    <a href="index.html">
+                        <img src="image/mylogo.jpg" alt="logo-image" width="150px" height="80px">
+                    </a>
+                </div>
+                <div class="portfolio-menu">
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="resume.html">Resume</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+            </nav>
+        </header>
+        <main>
+            <div class="blogForm-container">
+                <div class="formpage">
+                    <form action="">
+                        <div>
+                            <label for="blog-image">Blog-Image :</label>
+                            <input type="file" name="image" id="blog-image">
+                        </div>
+                        <div>
+                            <label for="blog-title">Blog-Title :</label>
+                            <input type="text" name="title" id="blog-title">
+                        </div>
+                        <div>
+                            <label for="blog-detail">Blog-Detail :</label>
+                            <textarea name="detail" id="blog-details" cols="40" rows="5"></textarea>
+                        </div>
+                        <div>
+                            <label for="blog-author">Blog-Author :</label>
+                            <input type="text" name="author" id="blog-author">
+                        </div>
+                        <div>
+                            <button type="submit" id="blog-send">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

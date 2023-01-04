@@ -755,6 +755,7 @@ main .blog-lists {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
     margin-top: 30px;
     margin-bottom: 30px;
     /* border: 1px solid red; */
@@ -858,12 +859,6 @@ main .resume-title .resume-line {
 }
 main .backgrounds {
     display: flex;
-    flex-direction: row;
-    /* border: 1px solid red; */
-    width: 100%;
-    height: 600px;
-    margin-left: 0px;
-    margin-right: 0px;
 }
 
 main .backgrounds .education {
@@ -958,13 +953,7 @@ main .backgrounds .experience .background-experience .experience-info hr{
 }
 
 main .office {
-    margin-top: 100px;
-    margin-bottom: 100px;
-    /* border: 1px solid white; */
-    width: 100%;
-    height: auto;
     display: flex;
-    flex-direction: row;
 }
  main .office .note-section {
     /* border: 1px solid red; */
@@ -1023,7 +1012,7 @@ main .office {
  }
 
 
- /* Prtfolio Start */
+ /* Portfolio Start */
 
 
  main .portfolio-head p{
@@ -1045,7 +1034,7 @@ main .office {
     border: 1px solid rgba(62, 240, 142, 0.87); 
     margin: 0 auto;   
     margin-top: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 60px;
 }
 
 main .portfolio-category {
@@ -1085,23 +1074,24 @@ main .portfolio-category a:hover{
 }
 
 main .items{
-    margin-top: 10px;
-    padding: 20px;
+    margin-top: 40px;
+    padding: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 30px;
 }
 
 .items .item{
     background-position: center;
     background-size: cover;
-    width: 30%;
+    width: 400px;
     height: 400px;
     display: flex;
     align-items: center;
     justify-content: center;
+
 }
 
 .items .item .contents a {
@@ -1120,6 +1110,138 @@ main .items{
 .items .item .contents a:hover{
     color: white;
     transition: 0.5s ease-in-out;
+}
+
+main .blogForm-container {
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main .blogForm-container .formpage form{
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+main .blogForm-container .formpage form label  {
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: 'Courier New', Courier, monospace;
+    margin-left: 20px;
+}
+
+main .blogForm-container .formpage form input[type="file"]{
+    width: 340px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    padding-left: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: left;  
+    margin-left: 100px;
+    background-color: white;
+    color: black;
+}
+
+main .blogForm-container .formpage form input[type="text"]{
+    width: 340px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid white;
+    padding-left: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: left;  
+    margin-left: 100px;
+}
+
+main .blogForm-container .formpage form input[type="text"]:focus{
+    outline: none;
+}
+
+main .blogForm-container .formpage form textarea{
+    width: 340px;
+    height: 100px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    padding-left: 10px;
+    padding-top: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: left;  
+    margin-left: 100px;
+}
+main .blogForm-container .formpage form textarea:focus{
+    outline: none;
+}
+
+main .blogForm-container .formpage form button{
+    width: 180px;
+    height: 40px;
+    border-radius: 8px;
+    border: 1px solid rgba(128, 128, 128, 0.5);
+    background-color: rgba(216, 216, 216, 0.651);
+    color: black;
+    font-weight: 700;
+    font-size: 18px;
+    margin-top: 20px;
+}
+.humberger{
+    display: none;
+}
+
+
+
+
+
+@media screen and (max-width: 600px){
+
+    .portfolio-menu{
+        display: none;
+    }
+    .humberger{
+        display: block;
+    }
+    main .blog-lists{
+        display: block;
+    }
+    main .portfolio-category ul{
+        display: block;
+    }
+    main .items .item{
+        display: block;
+        align-items: center;
+        text-align: center;
+    }
+    main .contact-details .underinfo{
+        display: none;
+    }
+    main .contact-details .contact-session .contact-form form{
+        display: block;
+        width: 360px;
+    }
+    main .backgrounds {
+        display: block;
+        align-items: center;
+    }
+    main .office{
+        display:block;
+    }
 }
 
 

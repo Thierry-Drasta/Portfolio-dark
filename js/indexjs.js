@@ -4,6 +4,40 @@ var subjectError = document.getElementById('subject-error');
 var messageError = document.getElementById('message-error');
 var submitError = document.getElementById('submit-error');
 
+var myEmailError = document.getElementById('myemail-error');
+var sendError = document.getElementById('send-error');
+
+
+function validateLoginMail() {
+
+    var myemail = document.getElementById('email-login').value;
+    
+    if (myemail.length == 0 ) {
+        myEmailError.innerHTML = '<h5 style="color:gray;">Required email.</h5>';
+        return false;
+    }
+    if (! myemail.match(/^[A-Za-z \._\-[0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/)) {
+        myEmailError.innerHTML = '<h6 style="color:red">Incorrect email!! </h6>';
+        return false;
+    }
+    
+    myEmailError.innerHTML = '<h6 style="color:green;">Correct email. </h6>';
+    return true;
+    
+}
+
+function validateLoginForm(){
+    if (!validateLoginMail()) {
+        sendError.style.display = 'block';
+        sendError.innerHTML = '<h6 style="color:yellow;">Only admin email required... </h6>';
+        setTimeout(function()
+        {
+            sendError.style.display = 'none';
+        }, 4000);
+        return false;
+    }
+}
+
 function validateName() {
     var name = document.getElementById('contact-name').value;
 

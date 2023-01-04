@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="CSS/style.css">
+    <link rel="stylesheet" type="text/css" href="CSS/style2.css">
     <title>Portfolio Homepage</title>
-    
+
     <style>
         .container {
             background-image: url('image/bkground.jpg');
@@ -15,10 +17,11 @@
             background-size: cover;
             background-repeat: no-repeat;
             background-attachment: fixed;
-            height: 100vh; 
+            height: 100vh;
         }
     </style>
 </head>
+
 <body>
     <div class="container">
         <header>
@@ -28,6 +31,11 @@
                         <img src="image/mylogo.jpg" alt="logo-image" width="150px" height="80px">
                     </a>
                 </div>
+                 <svg xmlns="http://www.w2.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" style="width: 19px; " class="humberger">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M2.75 6.75h16.5M3.75 12h16.5m-16.5 5.25H12" />
+                </svg>
                 <div class="portfolio-menu">
                     <ul>
                         <li><a href="about.html">About</a></li>
@@ -37,14 +45,14 @@
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
-                
+
             </nav>
         </header>
         <main>
             <div class="title">
                 <div class="big-header">
                     <h1>Hi, I'm <span class="name">Thierry TUYISHIME</span></h1>
-                </div> 
+                </div>
                 <div class="small-header">
                     <p>I'm a Full Stack Developer</p>
                 </div>
@@ -58,14 +66,87 @@
                 </div>
                 <div class="social-media">
                     <ul>
-                        <li><a href="www.facebook.com" target="_blank"><img src="image/facebook.svg" alt="facebook"></a></li>
-                        <li><a href="https://twitter.com/Drasta127" target="_blank"><img src="image/twitter.svg" alt="twitter"></a></li>
-                        <li><a href="https://www.linkedin.com/in/tuyishime-thierry-9149a31a5/" target="_blank"><img src="image/linkedin.svg" alt="linkedin"></a></li>
-                        <li><a href="https://github.com/Thierry-Drasta" target="_blank"><img src="image/github.svg" alt="github"></a></li>
+                        <li><a href="www.facebook.com" target="_blank"><img src="image/facebook.svg" alt="facebook"></a>
+                        </li>
+                        <li><a href="https://twitter.com/Drasta127" target="_blank"><img src="image/twitter.svg"
+                                    alt="twitter"></a></li>
+                        <li><a href="https://www.linkedin.com/in/tuyishime-thierry-9149a31a5/" target="_blank"><img
+                                    src="image/linkedin.svg" alt="linkedin"></a></li>
+                        <li><a href="https://github.com/Thierry-Drasta" target="_blank"><img src="image/github.svg"
+                                    alt="github"></a></li>
                     </ul>
                 </div>
             </div>
         </main>
+
+        <footer>
+            <div class="footer-container">
+
+                <div class="footer-items">
+                    <div class="title">
+                        <h3>Solutions</h3>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="#">Customer Support</a>
+                        </li>
+                        <li>
+                            <a href="#">Fullstack Developer</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-items">
+                    <div class="title">
+                        <h3>Resources</h3>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="#">ResourcesHub</a>
+                        </li>
+                        <li>
+                            <a href="#">Blog</a>
+                        </li>
+                        <li>
+                            <a href="#">Learn More</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-items">
+                    <div class="title">
+                        <h3>Companies</h3>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="#">Caritas RWANDA</a>
+                        </li>
+                        <li>
+                            <a href="#">Speco RWANDA</a>
+                        </li>
+                        <li>
+                            <a href="#">Klab Academy</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="login">
+                    <form action="" method="post" onsubmit="return validateLoginForm()">
+                        <div class="alertemail">
+                            <span id="myemail-error"></span>
+                        </div>
+                        <input type="email" name="email" placeholder="Enter email" id="email-login"
+                            onkeyup="validateLoginMail()">
+                        <button type="submit" class="signin">SignIn</button>
+                        <div class="alertlogin">
+                            <span id="send-error"></span>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </footer>
     </div>
+
+    <script type="text/javascript" src="js/indexjs.js"></script>
 </body>
+
 </html>
