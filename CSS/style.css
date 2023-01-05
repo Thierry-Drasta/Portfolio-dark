@@ -45,10 +45,18 @@ header nav{
     justify-content: space-between;
 }
 
+header nav .openmenu{
+    font-size: 2rem;
+    cursor: pointer;
+    margin: 20px;
+    display: none;
+}
+
 header nav .portfolio-logo {
     margin-left: 20px;
     margin-top: 20px;
 }
+
 
 main .title{
     display: flex;
@@ -1226,10 +1234,7 @@ header nav .closemenu{
 
 @media screen and (max-width: 600px){
 
-    /* .portfolio-menu{
-        display: none;
-    } */
-    header nav .openmenu {
+    openmenu {
         display: block;
     }
     main .blog-lists{
