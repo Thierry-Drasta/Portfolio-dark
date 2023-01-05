@@ -5,7 +5,7 @@
 
 }
 
-.humberger{
+.openmenu{
     display: none;
 }
 
@@ -93,7 +93,7 @@ footer .footer-container .login button{
         display: none;
     }
     
-    .humberger{
+    .openmenu{
         display: block;
     }
 

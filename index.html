@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="CSS/style.css">
     <link rel="stylesheet" type="text/css" href="CSS/style2.css">
+    <link href='https://css.gg/menu.css' rel='stylesheet'>
+    <link href='https://css.gg/close.css' rel='stylesheet'>
     <title>Portfolio Homepage</title>
 
     <style>
@@ -31,18 +33,21 @@
                         <img src="image/mylogo.jpg" alt="logo-image" width="150px" height="80px">
                     </a>
                 </div>
-                 <svg xmlns="http://www.w2.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                        stroke="currentColor" style="width: 19px; " class="humberger">
-                        <path stroke-linecap="round" stroke-linejoin="round"
-                            d="M2.75 6.75h16.5M3.75 12h16.5m-16.5 5.25H12" />
-                </svg>
+                <div class="openmenu">
+                    <i class="gg-menu"></i>
+                </div>
+
                 <div class="portfolio-menu">
-                    <ul>
+                    <ul class="mainmenu">
                         <li><a href="about.html">About</a></li>
                         <li><a href="resume.html">Resume</a></li>
                         <li><a href="portfolio.html">Portfolio</a></li>
                         <li><a href="blog.html">Blog</a></li>
                         <li><a href="contact.html">Contact</a></li>
+
+                        <div class="closemenu">
+                            <i class="gg-close"></i>
+                        </div>
                     </ul>
                 </div>
 
@@ -147,6 +152,7 @@
     </div>
 
     <script type="text/javascript" src="js/indexjs.js"></script>
+    <script type="text/javascript" src="js/menujs.js"></script>
 </body>
 
 </html>

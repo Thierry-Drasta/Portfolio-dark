@@ -32,7 +32,6 @@ ul{
     color: rgb(255, 5, 5);
     font-size: 14px;
     margin-bottom: 30px;
-
 }
 
 header nav{
@@ -49,17 +48,6 @@ header nav{
 header nav .portfolio-logo {
     margin-left: 20px;
     margin-top: 20px;
-}
-
-header nav .portfolio-menu ul{
-    display: flex;
-    flex-direction: row;
-    margin-right: 60px;
-}
-
-header nav .portfolio-menu ul li a{
-    margin-left: 30px;
-    color: #fff;
 }
 
 main .title{
@@ -1201,20 +1189,47 @@ main .blogForm-container .formpage form button{
     font-size: 18px;
     margin-top: 20px;
 }
-.humberger{
+
+header nav .portfolio-menu .mainmenu{
+    display: flex;
+    flex-direction: row;
+    margin-right: 60px;
+}
+
+header nav .portfolio-menu .mainmenu li a{
+    display: inline-block;
+    /* this padding leaves space between items */
+    padding: 15px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+header nav .portfolio-menu .mainmenu li a:hover{
+    background-color: rgb(27, 27, 27);
+}
+
+header nav .openmenu{
+    font-size: 2rem;
+    cursor: pointer;
+    margin: 20px;
+    display: none;
+}
+
+header nav .closemenu{
+    font-size: 2rem;
+    cursor: pointer;
     display: none;
 }
 
 
 
 
-
 @media screen and (max-width: 600px){
 
-    .portfolio-menu{
+    /* .portfolio-menu{
         display: none;
-    }
-    .humberger{
+    } */
+    header nav .openmenu {
         display: block;
     }
     main .blog-lists{
@@ -1241,6 +1256,36 @@ main .blogForm-container .formpage form button{
     }
     main .office{
         display:block;
+    }
+
+    header nav .portfolio-menu .mainmenu{
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0; 
+        left: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: top 1s ease;
+        display: none;
+    }
+
+    header nav .portfolio-menu .mainmenu .closemenu{
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    header nav .openmenu {
+        display: block;
+    }
+
+    header nav .portfolio-menu .mainmenu li a:hover{
+        background-color: rgb(27, 27, 27);
+        padding: 12px;
     }
 }
 
