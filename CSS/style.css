@@ -1234,14 +1234,14 @@ main .blogForm-container .formpage form button{
     display: inline-flex;
 }
 .wrapper .static-txt{
-    font-size: 16px;
+    font-size: 24px;
     color: #fff;
     font-weight: 400;
-    margin-top: 35px;
+    margin-top: 30px;
 }
 
 .wrapper .dynamic-txt{
-    margin-left: 15px;
+    margin-left: 24px;
     height: 90px;
     line-height: 90px;
     overflow: hidden;
@@ -1250,7 +1250,7 @@ main .blogForm-container .formpage form button{
 .dynamic-txt li{
     color: #e6b7b7;
     list-style: none;
-    font-size: 16px;
+    font-size: 24px;
     font-weight: 500;
     position: relative;
     top: 0;
@@ -1286,7 +1286,13 @@ main .blogForm-container .formpage form button{
 }
 
 @media(max-width: 600px){
-    
+
+    main .title .wrapper .static-txt{
+        margin-top: 80px;
+    }
+    main .title .wrapper .dynamic-txt{
+        margin-top: 45px;
+    }
     main .blog-lists{
         display: block;
     }
