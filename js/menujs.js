@@ -1,15 +1,13 @@
-const mainmenu = document.querySelector('.mainMain')
-const closemenu = document.querySelector('.closemenu');
-const openmenu = document.querySelector('openmenu');
+const humberger = document.querySelector(".humberger");
+const navMenu = document.querySelector(".nav-menu");
 
-openmenu.addEventListener('click', show);
-closemenu.addEventListener('click', close);
+humberger.addEventListener("click", () => {
+    humberger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+})
 
-function show() {
-    mainmenu.style.display = 'flex';
-    mainmenu.style.top = 0;
-}
-
-function close() {
-    mainmenu.style.top = '-100%'; 
-}
+document.querySelectorAll(".nav-link").forEach(n => n.
+    addEventListener("click", () => {
+        humberger.classList.remove("active");
+        navMenu.classList.remove("active"); 
+    }))

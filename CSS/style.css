@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -11,11 +12,66 @@ body {
 
 a{
     text-decoration: none;
+    color: #fff;
 }
 
 ul{
     list-style: none;
 }
+
+li{
+    list-style: none;
+}
+
+/* Header style CSS */
+
+.nav-bar{
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+    text-transform: uppercase;
+}
+
+.nav-branding{
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-right: 60px;
+}
+.nav-link{
+    transition: 0.7s ease;
+    font-weight: ;
+}
+
+.nav-link:hover{
+    color: #e9bcbc;
+}
+
+.humberger{
+    display: none;
+    cursor: pointer;
+}
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+    margin-right: 20px;
+}
+/* End of Header style CSS */
 
 .input-group  {
     display: flex;
@@ -33,30 +89,6 @@ ul{
     font-size: 14px;
     margin-bottom: 30px;
 }
-
-header nav{
-    background-color: black;
-    height: 100px;
-    width: 100%;
-    padding: 0px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-}
-
-header nav .openmenu{
-    font-size: 2rem;
-    cursor: pointer;
-    margin: 20px;
-    display: none;
-}
-
-header nav .portfolio-logo {
-    margin-left: 20px;
-    margin-top: 20px;
-}
-
 
 main .title{
     display: flex;
@@ -1198,45 +1230,62 @@ main .blogForm-container .formpage form button{
     margin-top: 20px;
 }
 
-header nav .portfolio-menu .mainmenu{
-    display: flex;
-    flex-direction: row;
-    margin-right: 60px;
+.wrapper{
+    display: inline-flex;
 }
-
-header nav .portfolio-menu .mainmenu li a{
-    display: inline-block;
-    /* this padding leaves space between items */
-    padding: 15px;
-    text-transform: uppercase;
+.wrapper .static-txt{
+    font-size: 16px;
     color: #fff;
+    font-weight: 400;
+    margin-top: 35px;
 }
 
-header nav .portfolio-menu .mainmenu li a:hover{
-    background-color: rgb(27, 27, 27);
+.wrapper .dynamic-txt{
+    margin-left: 15px;
+    height: 90px;
+    line-height: 90px;
+    overflow: hidden;
 }
 
-header nav .openmenu{
-    font-size: 2rem;
-    cursor: pointer;
-    margin: 20px;
-    display: none;
+.dynamic-txt li{
+    color: #e6b7b7;
+    list-style: none;
+    font-size: 16px;
+    font-weight: 500;
+    position: relative;
+    top: 0;
+    animation: slide 6s steps(4) infinite;
 }
-
-header nav .closemenu{
-    font-size: 2rem;
-    cursor: pointer;
-    display: none;
-}
-
-
-
-
-@media screen and (max-width: 600px){
-
-    openmenu {
-        display: block;
+@keyframes slide {
+    100%{
+        top: -360px;
     }
+}
+
+
+
+.dynamic-txt li span{
+    position: relative;
+}
+.dynamic-txt li span::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    border-left: 2px solid #f7a5a5;
+    animation: typing 1.5s steps(18) infinite;
+}
+
+@keyframes typing {
+    100%{
+        left: 100%;
+        margin: 0 -35px 0 35px;
+    }
+}
+
+@media(max-width: 600px){
     main .blog-lists{
         display: block;
     }
@@ -1263,34 +1312,37 @@ header nav .closemenu{
         display:block;
     }
 
-    header nav .portfolio-menu .mainmenu{
-        height: 100vh;
+
+    /* Header Responsive Menu */
+
+    .humberger{
+        display: block;
+    }
+    .humberger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .humberger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .humberger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .nav-menu{
         position: fixed;
-        top: 0;
-        right: 0; 
-        left: 0;
-        z-index: 10;
+        left: -100%;
+        top: 70px;
+        gap: 0;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        transition: top 1s ease;
-        display: none;
+        background-color: #424242fa;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
     }
-
-    header nav .portfolio-menu .mainmenu .closemenu{
-        display: block;
-        position: absolute;
-        top: 20px;
-        right: 20px;
+    .nav-item{
+        margin: 16px 0;
     }
-
-    header nav .openmenu {
-        display: block;
-    }
-
-    header nav .portfolio-menu .mainmenu li a:hover{
-        background-color: rgb(27, 27, 27);
-        padding: 12px;
+    .nav-menu.active{
+        left: 0;
     }
 }
 
