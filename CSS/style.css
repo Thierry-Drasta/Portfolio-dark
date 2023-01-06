@@ -50,7 +50,7 @@ li{
 }
 .nav-link{
     transition: 0.7s ease;
-    font-weight: ;
+    font-weight: 500;
 }
 
 .nav-link:hover{
@@ -1286,30 +1286,58 @@ main .blogForm-container .formpage form button{
 }
 
 @media(max-width: 600px){
+    
     main .blog-lists{
         display: block;
     }
     main .portfolio-category ul{
         display: block;
     }
-    main .items .item{
-        display: block;
-        align-items: center;
-        text-align: center;
+    main .portfolio-category ul li{
+        display: none;  
     }
     main .contact-details .underinfo{
         display: none;
     }
+
+    main  .contact-details .contact-session .contact-session-header{
+        display: block;
+        align-items: center;
+        justify-content: center;
+        margin-top: 150px;
+    }
     main .contact-details .contact-session .contact-form form{
         display: block;
         width: 360px;
+        margin-top: 10px;
     }
-    main .backgrounds {
+    main .backgrounds{
         display: block;
         align-items: center;
     }
+    main .backgrounds .education{
+        display: block;
+        align-items: center;
+        width: auto;
+    }
+    main .backgrounds .experience{
+        display: block;
+        align-items: center;
+        width: auto;
+        margin-bottom: 100px;
+    }
     main .office{
         display:block;
+    }
+    main .office .note-section{
+        display: block;
+        align-items: center;
+        width: auto;
+    }
+    main .office .video-section{
+        display: block;
+        align-items: center;
+        width: auto;
     }
 
 
